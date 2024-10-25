@@ -34,3 +34,30 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+
+Environment Variables:
+
+Create a .env file in the root directory.
+Add the following environment variables:
+env
+
+DB_HOST=localhost
+DB_USER=root
+DB_PASSWORD=password
+DB_NAME=your_database
+PORT=3000
+
+
+
+URL: PUT /api/auth/userupdate?id=1
+Description: Updates user information by ID.
+Parameters:
+id (Path): User ID to update
+Request Body:
+json
+
+{
+  "username": "NewUsername",
+  "email": "newemail@example.com"
+}
